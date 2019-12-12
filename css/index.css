@@ -1,0 +1,488 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.5rem;height:100%;background: #f4f4f4;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix{ *zoom:1; }
+.clearfix:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.5rem;margin: 0 auto}
+.zg-wrap{margin: 0 auto;width: 7.5rem;}
+header {
+    width: 7.5rem;
+    height: .8rem;
+    background: #f2f2f2;
+}
+header a {
+    font:700 .2rem/.4rem "microsoft yahei";
+    color:#fff;
+}
+header a img {
+    float: left;
+}
+header .logo {
+    display: block;
+    float: left;
+    width: 2rem;
+    height: .36rem;
+    margin-top: .2rem;
+    margin-left: .3rem;
+}
+header .zgfb {
+    display: block;
+    float: right;
+    width: 1.15rem;
+    height: .36rem;
+    margin-right: .3rem;
+    margin-top: .2rem;
+}
+header .logo img {
+    width: .75rem;
+    height: .34rem;
+    margin-right: .1rem;
+}
+header .zgfb img {
+    width: .27rem;
+    height: .24rem;
+    margin-top: .12rem;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+    z-index: 899;
+}
+.navbar {
+    box-shadow: none;
+    background: rgba(70,70,70,0);
+}
+.navbar.active {
+    background: rgb(255,255,255);
+    transition: background 3s;
+}
+.navbar.active a {
+    color:#000;
+}
+/*footer*/
+.foot{
+    position: fixed;
+    bottom:0;
+    width:7.5rem;
+    height:.9rem;
+    overflow: hidden;
+    z-index:999;
+}
+.foot a{
+    float: left;
+    width:3.75rem;
+    font:.26rem/0.9rem 'Microsoft YaHei';
+    text-align: center;
+}
+.foot a:first-child{
+    background: #f2f2f2;
+    color: #000;
+}
+.foot a:first-child img {
+    width: .47rem;
+    height: .4rem;
+    margin-right: .1rem;
+}
+.foot a:last-child{
+    background: #dc2f3c;
+    color: #fff;
+}
+.foot a:last-child img {
+    width: .3rem;
+    height: .38rem;
+    margin-right: .1rem;
+}
+
+
+/*m_banner*/
+.mban {
+    width: 7.5rem;
+    height: 7.96rem;
+    background: url(../images/ban.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.mban h1 {
+    float: left;
+    text-indent: -9999px;
+}
+/*zgm1*/
+.zgm1 {
+    width: 7.5rem;
+    height: 12.33rem;
+    background: url(../images/m1.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.zgm1 h2 {
+  font:700 .36rem/.68rem "microsoft yahei";
+  text-align: center;
+  color:#fff;
+  letter-spacing: .02rem;
+  background: url(../images/bailine.png) no-repeat center bottom;
+  -webkit-background-size: 1.44rem;
+  background-size: 1.44rem;
+  padding-top: .15rem;
+  margin-bottom: .6rem;
+}
+.nav {
+  width: 6.9rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.nav a{
+  display: block;
+  padding-left: .16rem;
+  padding-right: .16rem;
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center;
+  font-size: .24rem;
+  text-align: center;
+  color:#fff;
+  font-weight: bold;
+  background: #e72c09;
+  border-radius: .08rem;
+  margin-left: .05rem;
+  margin-right: .05rem;
+  margin-bottom: .1rem;
+}
+.nav a.hover {
+  background: #ffd300;
+  color: #e11016;
+}
+.lists {
+  width: 6.9rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: .3rem;
+}
+.its {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  margin-bottom: .3rem;
+  background: url(../images/defult.png) no-repeat center;
+  -webkit-background-size: 3.2rem;
+  background-size: 3.2rem;
+  text-align: center;
+  transition: 0.3s
+}
+.its img {
+  width: .72rem;
+  height: .72rem;
+  margin-top: .25rem;
+  margin-bottom: .15rem;
+}
+.its h3 {
+  font-size: .24rem;
+  text-align: center;
+  color:#d31211;
+  font-weight: bold;
+  margin-bottom: .15rem;
+}
+.its p {
+  text-align: left;
+  font-size: .2rem;
+  color:#42403e;
+  padding-left: .45rem;
+  background: url(../images/redo.png) no-repeat top .08rem left .3rem;
+  -webkit-background-size: .12rem;
+  background-size: .12rem;
+  padding-right: .15rem;
+}
+.its.active h3,.its.active p{
+  color: #fff;
+}
+.its.active {
+  background: url(../images/hover.png) no-repeat center;
+  -webkit-background-size:3.2rem ;
+  background-size:3.2rem ;
+}
+.its.active p {
+  background: url(../images/baio.png) no-repeat top .05rem left .3rem;
+  -webkit-background-size: .12rem;
+  background-size: .12rem;
+}
+.zixun {
+    display: block;
+    margin: .42rem auto 0;
+    width: 2.1rem;
+    height: .67rem;
+    background: url(../images/ybtn.png) no-repeat center;
+    -webkit-background-size: 2.1rem;
+    background-size: 2.1rem;
+}
+
+/*zgm1*/
+.zgm2 {
+    width: 7.5rem;
+    height: 12.3rem;
+    background: url(../images/m2.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.zgm2 h2 {
+  font:700 .36rem/.68rem "microsoft yahei";
+  text-align: center;
+  color:#e50e18;
+  letter-spacing: .02rem;
+  background: url(../images/redline.png) no-repeat center bottom;
+  -webkit-background-size: 1.44rem;
+  background-size: 1.44rem;
+  padding-top: .15rem;
+  margin-bottom: .6rem;
+}
+.des {
+  width: 6.9rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: .3rem;
+}
+.desi {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  margin-bottom: .3rem;
+  background: url(../images/hui.png) no-repeat center bottom;
+  -webkit-background-size: 3.2rem;
+  background-size: 3.2rem;
+  text-align: center;
+  transition: 0.3s
+}
+.desi img {
+    width: 1.67rem;
+}
+.desi h3{
+  font-size: 16px;
+  text-align: center;
+  color:#e24b2d;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: -12px;
+  letter-spacing: 1px;
+}
+.desi p{
+  font-size: .2rem;
+  line-height: .3rem;
+  text-align: center;
+  color:#696969;
+  margin-top: -.1rem;
+}
+.zixuns {
+  display: block;
+    margin: .42rem auto 0;
+    width: 2.1rem;
+    height: .67rem;
+    background: url(../images/rbtn.png) no-repeat center;
+    -webkit-background-size: 2.1rem;
+    background-size: 2.1rem;
+  
+}
+.zgm3 {
+    width: 7.5rem;
+    height: 4.92rem;
+    background: url(../images/m3.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.zgm3 h2 {
+  font:700 .36rem/.68rem "microsoft yahei";
+  text-align: center;
+  color:#fff;
+  letter-spacing: .02rem;
+  background: url(../images/bailine.png) no-repeat center bottom;
+  -webkit-background-size: 1.44rem;
+  background-size: 1.44rem;
+  padding-top: .15rem;
+  margin-bottom: .6rem;
+}
+.you {
+  width: 7.5rem;
+  height: 2.36rem;
+  display: flex;
+}
+.youits {
+  flex: 1;
+
+}
+.youits p{
+  font:400 .2rem/.3rem "microsoft yahei";
+  color:#451f08;
+  padding-top: 1.56rem;
+  margin-left: .2rem;
+}
+.youits:nth-child(1){
+  background: url(../images/500.png) no-repeat center;
+  -webkit-background-size: 1.72rem 2.36rem;
+  background-size: 1.72rem 2.36rem;
+}
+.youits:nth-child(2){
+  background: url(../images/1000.png) no-repeat center;
+  -webkit-background-size: 1.72rem 2.36rem;
+  background-size: 1.72rem 2.36rem;
+}
+.youits:nth-child(3){
+  background: url(../images/1500.png) no-repeat center;
+  -webkit-background-size: 1.72rem 2.36rem;
+  background-size: 1.72rem 2.36rem;
+}
+.youits:nth-child(4){
+  background: url(../images/2000.png) no-repeat center;
+  -webkit-background-size: 1.72rem 2.36rem;
+  background-size: 1.72rem 2.36rem;
+}
+
+.zgm4 {
+    width: 7.5rem;
+    height: 9.37rem;
+    background: url(../images/m4.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.zgm4 h2 {
+  font:700 .36rem/.68rem "microsoft yahei";
+  text-align: center;
+  color:#e50e18;
+  letter-spacing: .02rem;
+  background: url(../images/redline.png) no-repeat center bottom;
+  -webkit-background-size: 1.44rem;
+  background-size: 1.44rem;
+  padding-top: .15rem;
+  margin-bottom: .6rem;
+}
+.kenav {
+  height: .76rem;
+  width: 100%;
+}
+.kenav .keitem {
+  float: left;
+  height: .76rem;
+  width: 3rem;
+  background: url(../images/onfon.png) no-repeat;
+  -webkit-background-size: 3rem;
+  background-size: 3rem;
+  font:700 .2rem/.76rem "microsoft yahei";
+  text-align: center;
+  color:#fff;
+}
+.kecon {
+    border-left: .05rem solid #e50e18;
+    border-top: .05rem solid #e50e18;
+    border-bottom: .05rem solid #e50e18;
+}
+.zgm5 {
+    width: 7.5rem;
+    height: 8.19rem;
+    background: url(../images/m5.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+/*table start*/
+.table {
+  width: 6.8rem;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.table tr {
+
+}
+.table tr td{
+  font:400 .18rem "microsoft yahei";
+  color:#000;
+  border-right:.01rem solid #000;
+  padding: .05rem;
+  height: 1rem;
+  background: #fff;
+}
+.table tr td p {
+  text-align: left;
+  padding-left: .05rem;
+}
+.table tr td a {
+  display: block;
+  width: 1.3rem;
+  height: .35rem;
+  border:1px solid #fc417b;
+  font:400 .18rem/.35rem "microsoft yahei";
+  color:#fff;
+  text-align: center;
+  border-radius: .18rem;
+  margin: 0 auto;
+  background: #fc417b;
+  transition: 0.3s
+}
+.table tr td a:hover {
+  color:#fc417b;
+  background: transparent;
+}
+.table tr td:last-child{
+  border-right:none;
+}
+.table tr {
+  border-bottom:1px solid #000;
+}
+.table tr:first-child {
+  border:none;
+}
+.table tr:last-child {
+  border:none;
+}
+.table tr th{
+  height: .5rem;
+  background: #3a33ff;
+  font:400 .2rem "microsoft yahei";
+  color:#fff;
+}
+/*table end*/
+
+@keyframes bk {
+  0% {
+  -webkit-transform:scale(1);
+  transform:scale(1)
+  }
+  10%, 20% {
+  -webkit-transform:scale(0.9) rotate(-3deg);
+  transform:scale(0.9) rotate(-3deg)
+  }
+  30%, 50%, 70%, 90% {
+  -webkit-transform:scale(1.1) rotate(3deg);
+  transform:scale(1.1) rotate(3deg)
+  }
+  40%, 60%, 80% {
+  -webkit-transform:scale(1.1) rotate(-3deg);
+  transform:scale(1.1) rotate(-3deg)
+  }
+  100% {
+  -webkit-transform:scale(1) rotate(0);
+  transform:scale(1) rotate(0)
+  }
+}
+
+

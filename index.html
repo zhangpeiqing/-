@@ -1,0 +1,940 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="description" content="">
+    <meta name="Keywords" content="">
+    <title></title>
+    <!-- 移动端地域标签 -->
+    <meta name="location" content="province=北京;city=北京">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="canonical" href="">
+    <!-- 移动端地域标签 -->
+    <link rel="stylesheet" href="css/index.css?v1">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js?v1"></script>
+    <script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();  
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";  
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  
+            } 
+            else{
+                // window.location.href = 'http://bj.offcn.com/zg/19xdgkc/';
+            }
+        }  
+        browserRedirect();
+    </script>
+    <script>
+        function pgScale(){
+            var deviceWidth = document.documentElement.clientWidth;
+            if(deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        }
+        pgScale();
+        window.onresize=pgScale;
+    </script>
+<!-- <script type="text/javascript" src="http://www.offcn.com/statics/js/sdc_offcn_wap.js"></script> -->
+</head>
+<body style="overflow-x: hidden;">
+
+<div class="zg-wrap">
+
+    <!-- header -->
+    <header class="fixed navbar">
+        <a href="http://m.bj.offcn.com/" target="_blank" class="logo">
+            <img src="./images/mzglogo.png" alt="">中公教育
+        </a>
+        <a href="http://m.bj.offcn.com/zg/wap/address.html" target="_blank" class="zgfb">
+            <img src="./images/fb.png" alt="">分部地址
+        </a>
+    </header>
+    <!-- m_banner -->
+    <div class="mban">
+        <h1 class=""></h1>
+    </div>
+    <!-- zgm1 -->
+    <div class="zgm1">
+        <h2>面试考情分析</h2>
+        <nav class="nav navb">
+            <a href="javascript:;" target="_blank" class="item hover">外交部</a>
+            <a href="javascript:;" target="_blank" class="item">税务局</a>
+            <a href="javascript:;" target="_blank" class="item">国家统计局调查总队</a>
+            <a href="javascript:;" target="_blank" class="item">海关</a>
+            <a href="javascript:;" target="_blank" class="item">海事局</a>
+            <a href="javascript:;" target="_blank" class="item">铁路公安</a>
+            <a href="javascript:;" target="_blank" class="item">银保监会</a>
+            <a href="javascript:;" target="_blank" class="item">科技部</a>
+            <a href="javascript:;" target="_blank" class="item">审计署</a>
+            <a href="javascript:;" target="_blank" class="item">中央党政机关</a>
+            <a href="javascript:;" target="_blank" class="item">商务部</a>
+            <a href="javascript:;" target="_blank" class="item">证监会</a>
+            <a href="javascript:;" target="_blank" class="item">无领导</a>
+            <a href="javascript:;" target="_blank" class="item">统考</a>
+            <a href="javascript:;" target="_blank" class="item">其他岗位</a>
+        </nav>
+        <div class="lists">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>结构化面试的形式</p>
+                <p>根据实际情况进行随机提问。</p>
+            </div>
+            <div class="its wow banJump" data-wow-delay="0.4s">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>一般在春节前进行</p>
+                <p>一般面试时间为 20-25 分钟左右</p>
+            </div>
+            <div class="its wow banJump" data-wow-delay="0.8s">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采用听题的方式。</p>
+                <p>演讲场外看题，准备10分钟，场内直接演讲</p>
+            </div>
+            <div class="its wow banJump" data-wow-delay="1.2s">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>重点测查考生的岗位匹配性、言语表达与理解能力以及综合分析能力</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>结构化小组的形式</p>
+                <p>考生有答题和相互点评、回应环节。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>备考时间15分钟。</p>
+                <p>考生每个题目答题时间不得超过2分钟</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>结构化小组采用看题形式。</p>
+                <p>备考室和考场都提供题本、笔、纸。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>综合分析能力、应变能力、统筹安排能力的考查，更关注互动点评阶段。</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>一般采用结构化面试形式</p>
+                <p>全天一套题，每套题 4 道题目。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>场外看材料 15 分钟</p>
+                <p>规定场内答题时间 20 分钟</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采用听题的方式。</p>
+                <p>场外看材料，一般提供纸笔；场内答题，一般提供纸笔</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>重点测查考生的岗位匹配性、言语表达与理解能力以及综合分析能力</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>普通结构化面试为主</p>
+                <p>材料题为辅</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>共 20 分钟，包干制，</p>
+                <p>一般不单独计算思考时间和答题时间</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>大部分采用听题</p>
+                <p>考官每读一道题，考生作答一道。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>单独命题，要求考生提前了解海关职能，明确工作要求，体现作答的针对性。</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>普通结构化面试为主</p>
+                <p>全天一套题，每套 4 道题</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>普通结构化，共 20 分钟</p>
+                <p>材料题：场外 15 分钟看材料，场内 20 分钟答题</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采用听题的考查方式</p>
+                <p>微材料题会单独放题本，视频题会放有电脑。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>单独命题，每年考试题目都会有一定创新，视频题、材料题、微材料题、反驳题都有出现，反套路趋势明显。</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>结构化面试</p>
+                <p>每天一套题，每套 4-5 道题目。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>时间包干制，20-25 分钟</p>
+                <p>一般提前 3 分钟提醒。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采用听题的考查方式</p>
+                <p>视频题或者图片题时会单独放视频和题本，由考官提问问题。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>突发事件的应对，考查警察日常业务知识，考查公安领域热点</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>结构化小组的形式。</p>
+                <p>考生有答题和相互点评、回应环节。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>普通结构化：场内答题时间 15-30 分钟</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>采用听题的形式。</p>
+                <p>无题本，大部分考场有草稿纸和笔。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>保监会历年都是针对通用能力的测查，没有专业特色，但在形式上不仅采用结构化，也有出现无领导的情况。</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>取结构化、专业考试、综合素质考查（包括心理测评考试）、领导面谈、个性活动评价</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>上半场：材料题，场外思考 10 分钟，场内答题。</p>
+                <p>下半场：场内 25 分钟，5-6 道题</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采取听题方式</p>
+                <p>材料题一般可以把场外做的笔记带入场内。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>综合分析、计划组织协调,人际、应变、岗位匹配性,言语理解与表达等，会出现科技部背景的题目</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>结构化面试的形式</p>
+                <p>全天一套题目；每套 4 道题目。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>25 分钟，包干制</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采用听题形式。</p>
+                <p>无题本，大部分考场有草稿纸和笔。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>独立命题，专业特色明显。考察审计热点的了解和分析。对审计实务的了解和运用</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>主要采用结构化、无领导、半结构化等形式，其中半结构化面试由部门司局级领导直接面谈。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>结构化：场内答题一般为 25 分钟，场外看材料10分钟</p>
+                <p>无领导：场外一般为 20 分钟，场内50～70 分钟</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>采用听题形式。</p>
+                <p>无题本，大部分考场有草稿纸和笔。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>考查要素较为集中，以综合分析能力、计划组织协调能力、应变能力和人际关系的意识与技巧为主。</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>结构化、外语考试、综合素质（包括心理测评考试、客观题、主观题）、司局谈话。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>普通结构化：场内答题时间一般为 15—25 分钟</p>
+                <p>材料结构化：场外看材料 10 分钟，场内答题时间一般为 15—25 分钟，</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>听题，无题本，大部分考场有草稿纸和笔。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>考查综合分析能力、计划组织协调能力为主。提问方式比较灵活，打破常规，更加有针对性。</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>普通结构化形式</p>
+                <p>全天一套题，每套 4 道题。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>20 分钟或 25 分钟。</p>
+                <p>普通结构化 2 道，专业题 3 选 2。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>采用看题形式。</p>
+                <p>提供题本、草稿纸、笔。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>重点考查实际解决岗位工作中问题的能力，以及专业能力与时代背景的结合</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>以无领导为主，也有一些</p>
+                <p>部门采取结构化+无领导的形式。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>每天一套题，每套二或三道题目</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>考场内安排有草稿纸和</p>
+                <p>笔，一般在场内看材料，部分是场外以规定时间内看材料。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>近三年的国考无领导考查题型以多项选择式问题和开放式问题为主，</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>既有传统结构化</p>
+                <p>也有材料题一拖五</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>时间包干制，25 分钟</p>
+                <p>每天两套题，每套 5 道题目。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>一般采用听题的考查方式</p>
+                <p>微材料题或者漫画题时会单独放题本，由考官提问问题。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>参与党政机关统一命题。会有组织专业能力测试的部门</p>
+            </div>
+        </div>
+        <div class="lists" style="display: none;">
+            <div class="its">
+                <img src="./images/lo1.png" alt="">
+                <h3>面试形式</h3>
+                <p>既有传统结构化，也有材</p>
+                <p>料题一拖五</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo2.png" alt="">
+                <h3>面试时间</h3>
+                <p>普通结构化：场内答题时间一般为 25 分钟</p>
+                <p>材料结构化：场外看材料 10 分钟，场内答题时间一般为 25 分钟</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo3.png" alt="">
+                <h3>考查方式</h3>
+                <p>采用听题形式。</p>
+                <p>微材料题或者漫画题时会单独放题本，由考官提问问题。</p>
+            </div>
+            <div class="its">
+                <img src="./images/lo4.png" alt="">
+                <h3>测查要素</h3>
+                <p>常考测评要素为综合分析能力、计划组织协调能力、应变能力、人际关系的意识与技巧、言语理解与表达能力。</p>
+            </div>
+        </div>
+        <a onclick="NTKF.im_openInPageChat('kf_10353_1536732545828')" class="zixun"></a>
+    </div>
+    <!-- zgm2 -->
+    <div class="zgm2">
+        <h2>面试考情分析</h2>
+        <nav class="navgg nav">
+            <a href="javascript:;" target="_blank" class="item hover">外交部</a>
+            <a href="javascript:;" target="_blank" class="item">税务局</a>
+            <a href="javascript:;" target="_blank" class="item">国家统计局调查总队</a>
+            <a href="javascript:;" target="_blank" class="item">海关</a>
+            <a href="javascript:;" target="_blank" class="item">海事局</a>
+            <a href="javascript:;" target="_blank" class="item">铁路公安</a>
+            <a href="javascript:;" target="_blank" class="item">银保监会</a>
+            <a href="javascript:;" target="_blank" class="item">科技部</a>
+            <a href="javascript:;" target="_blank" class="item">审计署</a>
+            <a href="javascript:;" target="_blank" class="item">中央党政机关</a>
+            <a href="javascript:;" target="_blank" class="item">商务部</a>
+            <a href="javascript:;" target="_blank" class="item">证监会</a>
+            <a href="javascript:;" target="_blank" class="item">无领导</a>
+            <a href="javascript:;" target="_blank" class="item">统考</a>
+            <a href="javascript:;" target="_blank" class="item">其他岗位</a>
+        </nav>
+        <div class="des">
+            <div class="desi wow jello">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>演讲考察“又红又专”。<br>既有与外交理论相关的<br>话题，也有考察考生政<br>治立场的话题</p>
+            </div>
+            <div class="desi wow jello" data-wow-delay="0.3s">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>岗位匹配伴有个性追问，<br>内容紧贴求职动机。<br>核心考察考生是否适合<br>外交部工作</p>
+            </div>
+            <div class="desi wow jello" data-wow-delay="0.6s">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>计划组织考察具体，与<br>外交工作机密相关<br>有一定的专业性。会<br>出现对问题的追问。</p>
+            </div>
+            <div class="desi wow jello" data-wow-delay="0.9s">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>人际关系重点测查沟通<br>能力（现场模拟）<br>考官会与考生对话，<br>增加难度。</p>
+            </div>
+
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>面试形式新颖：面试形式<br>为结构化小组面试，考生<br>有答题和相互点评、回应<br>环节。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>命题有专业背景：以税务<br>机关日常工作情境命制题<br>目，如“基层税务所环境<br>艰苦”、“国税局会议室使<br>用安排”等。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>命题方式多样：漫画拟定<br>两个以上标题、多项选择<br>式问题、创意活动等为税<br>务局面试独有命题方式。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>题目的考查，在一定程度<br>上也会关注学生对于税务<br>工作的了解，是否能备税<br>务思维。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>重点考查统计调查，侧重<br>关注调查结果的真实有效；<br>不了解影响调查结果的要<br>素等于答不好；</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>重点考查数据分析，侧重<br>关注考生数据敏感性及科<br>学解读数据的基本素养；<br>缺乏数据解读技巧和方法<br>等于看不懂；</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>重点考查工作实务，侧重<br>对统计工作职责要求、统<br>计法规等实务知识的考查；<br>不了解实务知识等于不专<br>业；</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>重点考查综合分析，侧重<br>关注考生的热点储备及分<br>析问题的思维能力；分析<br>不透彻等于不匹配。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>观点类。以双观点居多，<br>具有思辨性</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>沟通协调类。围绕一个具<br>体任务，命题人往往会在<br>题干中设置一些限定性条<br>件。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>服务意识与技巧类。身份<br>多样，问题突出，考查考<br>生是否具备良好的责任意<br>识，能否做到换位思考，<br>妥善处理。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>海关工作场景类。赋予考<br>生海关工作人员的身份，<br>描绘出未来工作中常见的<br>问题和矛盾。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>连续 6 年单独命题，专业<br>性较强。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>近 3 年来，海事局每年考<br>试题目都会有一定创新，<br>视频题、材料题、微材料<br>题、反驳题都有出现，反<br>套路趋势明显。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>专业性：需要掌握海事通<br>航管理知识；海事局工作<br>实务；海事事故应急处理<br>等专业性知识。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>学生主要问题，海事事故<br>，应急处置无章法、不专<br>业，离海事人的角色，对<br>海事政务、执法工作要求、<br>程序不熟悉，办事不合规</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>视频题目考查专业，往往<br>都是围绕体貌特征描述，<br>作案过程描述，破案<br>线索提供，对比多个视频<br>的不同，以及为旅客提供<br>指导建议等方面进行考查。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>突发事件应对一直以来都<br>是铁路公安考查的重中之<br>重。如偷盗、打架斗殴处<br>理等扰乱公共秩序事件的<br>处理，甚至还出现过涉爆<br>、反恐等内容。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>围绕日常工作，铁路公安<br>会考查铁路沿线安全宣传，<br>火车物品偷盗调查，日常<br>业务技能培训等相关业务<br>知识。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>与公安领域有关的社会热<br>点问题都是铁路公安面试<br>的考查范围，甚至也会涉<br>及一些与公安领域无关的<br>一些社会热点问题，</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>除考查通用能力，其中必<br>考自我介绍外，还有对专<br>业能力的和英语的考查。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>在银保监会面试环节重点<br>考查考生的专业能力及专<br>业素养。一般通过简答题<br>和论述题两种题目进行考<br>查。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>英语题：英语作为一项重<br>要的阅读沟通表达考查的<br>能力</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>自我介绍，体现自己贴近<br>岗位要求，会出现根据个<br>人情况追问的情况</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>在个性评价活动环节以拓<br>展游戏为主要形式，全员<br>参与，10 人一组。会影响<br>接下来的司局面谈和结构<br>化考试成绩。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>司局领导面谈环节主要以<br>考生简历为依托，根据考<br>生简历上书写的学习经历、<br>工作经历以及性格特点进<br>行提问。问题较为随意，<br>并非标准的一问一答。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>专业考试：考试内容为英<br>语笔试和口试。一般各出<br>三道题目。 具有专业性。<br>英语专业考试的内容和科<br>技前沿问题相关度比较高。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>综合分析、计划组织协调、<br>人际、应变、岗位匹配性、<br>言语理解与表达都有所考<br>查，有些题目会结合科技<br>部背景出题</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>部门独立命题，专业特色<br>明显。面试部分（占总成<br>绩 35%），专业能力测试<br>部分（占总成绩 15%）。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>考察考生对审计热点的了<br>解和分析。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>考察考生对审计实务的了<br>解和运用。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>通过考试相关经历，考察<br>考生是否具备审计人胜任<br>素质。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>考查要素全面。综合分析、<br>计划组织协调、应变能力、<br>人际交往意识与技巧、服<br>务意识与技巧、建议能力、<br>岗位匹配性等能力</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>微材料题：考查数量趋于<br>稳定。测查能力呈发散趋<br>势</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>反驳类问题：重点考查综<br>合分析能力，多需结合社<br>会现实进行反驳。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>很多部门在结构化考试基<br>础上还会进行专业考试：<br>公文写作和英语（口试、<br>笔试）。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>所有考生均须参加英语笔<br>试和口试，笔试以托业考<br>试的形式考查。口试包含<br>自我介绍及考官提问，口<br>译</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>综合素质测试。考试时间<br>约半个小时，主要考查时<br>政热点知识及考生的求职<br>动机和职业规划。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>自我介绍+结构化面试+追<br>问。结构化面试结束后，<br>考官会根据考生表现进行<br>追问，追问时长和题量因<br>人而异。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>司局级谈话。即考生所报<br>考部门的领导与考生进行<br>面对面地交谈，最终实现<br>因岗择人。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>专业题目的考查，要求考<br>生作答时将专业知识与面<br>试技巧相融合。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>着重考查实际解决岗位工<br>作中问题的能力。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>考官可能针对考生的简历<br>个人情况以及题目回答进<br>行随机追问。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>会结合证监会日常工作情<br>境命制题目。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>无领导小组讨论组员人数<br>一般为 5-10 人，考生在考<br>试过程中不仅要和考官进<br>行交流，更要和其他组员<br>进行良好交流。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>无领导小组讨论的题目主<br>要依托于背景材料进行命<br>制，对考生的信息获取能<br>力有较高要求。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>在多项选择式问题的考查<br>中，在众多原因中选择较<br>重要的某几项原因的情况<br>考查较多。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>开放式问题要求考生基于<br>背景材料分析问题，制定<br>方案或者提出措施，对时<br>政热点素养和政府工作经<br>验有一定要求。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>部门统一命题</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>微材料题：考查数量趋于<br>稳定。测查能力呈发散趋<br>势</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>反驳类问题：重点考查综<br>合分析能力，多需结合社<br>会现实进行反驳。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>很多部门在结构化考试基<br>础上还会进行专业考试：<br>公文写作和英语（口试、<br>笔试）。</p>
+            </div>
+        </div>
+        <div class="des" style="display: none">
+            <div class="desi">
+                <img src="./images/chong1.png" alt="">
+                
+                <p>大材料。字数多，篇幅长，<br>内容多围绕政府公共服务。<br>难点在于拿到材料不知道<br>怎么分析利用材料。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong2.png" alt="">
+                
+                <p>微材料题。依托微材料，<br>命制 1-2 个问题。难点在<br>于一分钟内的思考时间</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong3.png" alt="">
+                
+                <p>反驳类题目。新题型，思<br>考时间短。难点在于短时<br>间内如何发散思维，找到<br>反驳的点，体现自己的逻<br>辑清晰。</p>
+            </div>
+            <div class="desi">
+                <img src="./images/chong4.png" alt="">
+                
+                <p>情境模拟类题目。既有微<br>材料，也有普通结构化，<br>往往集中在人际矛盾和突<br>发状况方面，既有以政府<br>身份对矛盾双方进行调解，<br>也有以消除误解做的劝说。</p>
+            </div>
+        </div>
+        <a onclick="NTKF.im_openInPageChat('kf_10353_1536732545828')" class="zixuns"></a>
+    </div>
+    <div class="zgm3">
+        <h2>课程优惠</h2>
+        <div class="you">
+            <div class="youits wow flipInX">
+                <p>1万-2万元课程</p>
+            </div>
+            <div class="youits wow flipInX" data-wow-delay="0.3s">
+                <p>2万-3万元课程</p>
+            </div>
+            <div class="youits wow flipInX" data-wow-delay="0.6s">
+                <p>3万-4万元课程</p>
+            </div>
+            <div class="youits wow flipInX" data-wow-delay="0.9s">
+                <p>4万元以上课程</p>
+            </div>
+        </div>
+    </div>
+    <div class="zgm4">
+        <h2>辅导课程</h2>
+        <nav class="nav navke">
+            <a href="javascript:;" target="_blank" class="item hover">外交部</a>
+            <a href="javascript:;" target="_blank" class="item">税务局</a>
+            <a href="javascript:;" target="_blank" class="item">国家统计局调查总队</a>
+            <a href="javascript:;" target="_blank" class="item">海关</a>
+            <a href="javascript:;" target="_blank" class="item">海事局</a>
+            <a href="javascript:;" target="_blank" class="item">铁路公安</a>
+            <a href="javascript:;" target="_blank" class="item">银保监会</a>
+            <a href="javascript:;" target="_blank" class="item">科技部</a>
+            <a href="javascript:;" target="_blank" class="item">审计署</a>
+            <a href="javascript:;" target="_blank" class="item">中央党政机关</a>
+            <a href="javascript:;" target="_blank" class="item">商务部</a>
+            <a href="javascript:;" target="_blank" class="item">证监会</a>
+            <a href="javascript:;" target="_blank" class="item">无领导</a>
+            <a href="javascript:;" target="_blank" class="item">统考</a>
+            <a href="javascript:;" target="_blank" class="item">其他岗位</a>
+        </nav>
+        <div class="kenav">
+            <div class="keitem hover">外交部</div>
+            <!-- <div class="keitem zjh">证监会</div> -->
+        </div>
+        <div class="kecon">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28051.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" ></iframe>
+        </div>
+        <div class="kecon" style="display: none">
+                <iframe src="https://m.51gouke.com/bjjm/1-9-gk28052.html" class="iframe" scrolling="auto" allowtransparency="true" ></iframe>
+        </div>
+        <style>
+            .iframe {
+            width: 7.5rem;
+            height: 5rem;
+            max-height: 880px;
+            display: block;
+            overflow: hidden;
+            }
+        </style>
+
+    </div>
+    <div class="zgm5">
+        
+    </div>
+    <!-- m_address -->
+    <div class="zg_address" style="width: 7.5rem;background:#444;">
+            <iframe src="http://m.bj.offcn.com/zg/address_m/" frameborder="0" scrolling="no" style="width: 7.2rem;height:8.56rem;margin-left: .15rem;"></iframe>
+    </div>
+
+    <!--foot-->
+    <div class="foot">
+        <a onClick="NTKF.im_openInPageChat('kf_10353_1536732545828')" target="_blank" rel="nofollow"><img src="./images/b11.png" alt="">立即咨询</a>
+        <a href="tel:010-82838321"><img src="./images/b22.png" alt="">010-82838321</a>
+    </div>
+
+</div>
+<script>
+var _hmt = _hmt || [];
+
+(function() {
+
+  var hm = document.createElement("script");
+
+  hm.src = "https://hm.baidu.com/hm.js?dafea501919eb8ebfb740272ece7ba0d";
+
+  var s = document.getElementsByTagName("script")[0]; 
+
+  s.parentNode.insertBefore(hm, s);
+
+})();
+</script>
+<script type="text/javascript" src="http://www.offcn.com/statics/js/bdtj_bj.js"></script>
+<script type="text/javascript" src="http://www.offcn.com/statics/js/bdbot.js"></script>
+<script language="javascript" src="http://www.offcn.com/statics/js/bdtj20161014.js"></script>
+<script type="text/javascript" src="http://bj.offcn.com/statics/js/zgjs/xiaoneng.js"></script>
+</body>
+</html>
